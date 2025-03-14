@@ -1,7 +1,8 @@
 # Installation/Setup Process:
-## 1.using Docker <br>
-## 2.using Local <br>
 
+# Table of Contents
+1. [Using Docker](#using-docker)
+2. [Using Local](#using-local)
 
 # Using Docker
 ### 1. Clone Github: [Docker-image](https://github.com/subhamkharwal/docker-images?tab=readme-ov-file)  repo from terminal:
