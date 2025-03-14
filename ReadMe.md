@@ -12,8 +12,9 @@
 ![image](https://github.com/user-attachments/assets/69566675-24ce-40c8-8664-76344e3bbdb6)
 
 <br>
--> Create Spark Session in a progream:
-![image](https://github.com/user-attachments/assets/f291aa5d-776e-4849-adcd-a8ab5371edcd)
+-> Create Spark Session in a program:
+
+![image](https://github.com/user-attachments/assets/4058eb47-0863-4860-9c8b-e6819afe91fc)
 
 ## 3. Go to [localhost:4040](http://localhost:4040/) for Spark UI:
 ![image](https://github.com/user-attachments/assets/6c2f6ba7-ef48-4233-a763-f926f439de5b)
