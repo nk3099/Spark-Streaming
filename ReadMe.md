@@ -122,6 +122,11 @@ echo $JAVA_HOME
 java -version
 ```
 
+### Step 6: Change user-name for terminal:
+```
+export PROMPT="nk3099 %1~ %# "; clear;
+```
+
 
 
 
