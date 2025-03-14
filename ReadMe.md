@@ -25,3 +25,20 @@
    $ kafka-topics --list --bootstrap-server ed-kafka:9092 <br>
    $ kafka-topics --create --topic test-topic --bootstrap-server ed-kafka:9092 <br>
    ![image](https://github.com/user-attachments/assets/51980797-149f-4133-9ca6-1247f76bf02c)
+
+## 5. ncat utility 
+-> To create an endpoint for Spark to read streaming data using ncat, you can use it to listen on a specific port and forward the incoming data to Spark's streaming application, effectively creating a socket-based streaming source. <br>
+**Socket** (IP+Port): communication endpoint that allows applications to exchange data over a network<br>
+
+  -> conect to container and update repositories for ubuntu using command on terminal: docker exec -it "ed-pyspark-jupyter-lab Container ID" /bin/bash <br>
+  -> Install ncat: to open socket endpoint   <br>                                                                          
+             root@c5f0427c16f2:/home/jupyter# sudo apt-get install ncat <br>
+             root@c5f0427c16f2:/home/jupyter# ncat -v <br>
+      OR <br>
+             root@c5f0427c16f2:/home/jupyter# apt install netcat-traditional <br>
+             root@c5f0427c16f2:/home/jupyter# netcat -h <br>
+             ![image](https://github.com/user-attachments/assets/3afc61c0-8a29-4aec-b248-e083eee8d296)
+
+
+
+  
