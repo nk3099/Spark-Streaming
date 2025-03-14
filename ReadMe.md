@@ -3,7 +3,7 @@
 ## 2.using Local <br>
 
 
-## Using Docker
+# Using Docker
 ### 1. Clone Github: [Docker-image](https://github.com/subhamkharwal/docker-images?tab=readme-ov-file)  repo from terminal:
 ![image](https://github.com/user-attachments/assets/5327789f-f0bf-4193-a09b-985f8502f9cc)
 ![image](https://github.com/user-attachments/assets/70e3b59f-a72f-489a-8683-1a648a32f467)
@@ -54,7 +54,72 @@ Saving content in 'example.txt' file for Batch Program
 ![image](https://github.com/user-attachments/assets/2331cf0e-cdea-4d56-a570-7cc8d34e5906)
 
 
-## Using Local
+************************************************************************************************************************************************************
+# Using Local
+
+### Step 1: Check Installed Java Versions 
+Run this command:
+
+```
+/usr/libexec/java_home -V
+```
+This will list all installed JDK versions. <br>
+✅ If JDK 11 appears in the list, note its exact path. <br>
+❌ If JDK 11 is NOT listed, we need to install it (go to Step 2).
+
+### Step 2: Install JDK 11 (If Missing) <br>
+If JDK 11 is not installed, install it using Homebrew:
+
+```
+brew install openjdk@11
+```
+After installation, check the installed path:
+
+```
+ls -l /opt/homebrew/opt/openjdk@11
+```
+You should see something like:
+
+```
+/opt/homebrew/opt/openjdk@11 -> ../Cellar/openjdk@11/11.0.x
+```
+
+### Step 3: Set JDK 11 as Default <br>
+Now, set JAVA_HOME to point to JDK 11:
+
+```
+export JAVA_HOME=/opt/homebrew/opt/openjdk@11
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+Check if it's working:
+```
+echo $JAVA_HOME
+java -version
+```
+You should see Java 11.
+
+### Step 4: Make the Change Permanent
+To make sure JDK 11 is set every time you open the terminal, add these lines to your shell config file:
+
+✅ For macOS Catalina & Later (Zsh)
+```
+echo 'export JAVA_HOME=/opt/homebrew/opt/openjdk@11' >> ~/.zshrc
+echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+✅ For Older macOS Versions (Bash)
+```
+echo 'export JAVA_HOME=/opt/homebrew/opt/openjdk@11' >> ~/.bash_profile
+echo 'export PATH="$JAVA_HOME/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+```
+
+### Step 5: Verify Again
+Now, check if Java is set correctly:
+```
+echo $JAVA_HOME
+java -version
+```
 
 
 
