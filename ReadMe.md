@@ -122,13 +122,19 @@ echo $JAVA_HOME
 java -version
 ```
 
-### Step 6: Change prompts for terminal:
+### Step 6: Change prompts for terminal (Optional):
 https://www.youtube.com/watch?v=XVSZAwTXtAs 
 
 ```
 export PROMPT="nk3099 %1~ %# "; clear;
 ```
 
+### Step 7: Run netcat command
+````
+nc -lk `port_no`
+````
+-> Run the program after the netcat command
+-> Enter the content to see word_count output.
 
 
 
