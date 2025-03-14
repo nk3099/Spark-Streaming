@@ -45,15 +45,6 @@
              root@c5f0427c16f2:/home/jupyter# netcat -h <br>
              ![image](https://github.com/user-attachments/assets/3afc61c0-8a29-4aec-b248-e083eee8d296)
 
- 
- ### 6.Setting up Jupyter Notebook:
-Saving content in 'example.txt' file for Batch Program
-![image](https://github.com/user-attachments/assets/6f6a6bad-a369-4f27-8b59-580affdd0f25)
-
-
-### 7. Running Streaming Program
-![image](https://github.com/user-attachments/assets/2331cf0e-cdea-4d56-a570-7cc8d34e5906)
-
 
 ************************************************************************************************************************************************************
 # Using Local
@@ -133,7 +124,7 @@ export PROMPT="nk3099 %1~ %# "; clear;
 ````
 nc -lk `port_no`
 ````
--> Run the program after the netcat command
+-> Run the program after the netcat command <br>
 -> Enter the content to see word_count output.
 
 
